@@ -1,0 +1,421 @@
+*{
+  margin: 0;
+    padding: 0;
+    background-color:transparent;
+    
+    box-sizing:border-box;
+    text-transform:capitalize;
+    outline: none;
+    text-decoration: none;
+   
+    font-family: "Nunito", sans-serif;
+   
+    transition: all .2s linear;
+  
+   
+   
+}
+
+html
+{
+   font-size: 80%;
+   overflow-x:hidden;
+   scroll-padding-top:6rem;
+   scroll-behavior: smooth; 
+}
+
+.btn{
+  display: inline-block;
+  margin-top:  1rem;
+  background: rgb(228, 151, 8);
+  color:#fff;
+  padding:.8rem 3rem;
+  border:.2rem solid rgb(228, 151, 8);
+  cursor: pointer;
+  font-size:1.7rem;
+}
+
+.btn:hover{
+  background: rgba(225,165,0,.2);
+  color: rgb(228, 151, 8);
+  
+}
+section{
+  padding:2rem 9%;
+}
+
+::selection{
+ background:rgb(228, 151, 8);
+ color:#fff;
+
+}
+
+#packages{
+  padding:1.5rem 9%;
+}
+h1{
+  color:black;
+  
+}
+h4{
+  color:  #fff;
+}
+span{
+  color: rgb(228, 151, 8);
+}
+
+
+
+.logo{
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.logo i{
+  margin-right: 10px;
+  color: rgb(228, 151, 8);
+  font-size: 1.8rem;
+}
+
+header{
+
+  position:fixed;
+  top:0;left:0;right:0;
+  background:#333;
+  z-index:1000;
+  display: flex;
+ align-items:center;
+  justify-content:space-between;
+  padding:1rem 4%;
+}
+header .icons i{
+  position:relative;
+  
+  left:500px;
+   font-size: 2.5rem;
+   color:#fff;
+   cursor:pointer;
+   margin-right: 2rem;
+}
+header .logo{
+  font-size:2.5rem;
+  font-weight: bolder;
+  color:#fff;
+  text-transform:uppercase;
+}
+
+header .logo span{
+  color:rgb(228, 151, 8);
+}
+header .icons i:hover{
+  color: rgb(228, 151, 8);
+}
+/* menu list style */
+header .navbar a{
+  margin: .8rem;
+  font-size: 2rem;
+ color: #fff;
+}
+
+header .navbar a:hover{
+  color: rgb(228, 151, 8);
+}
+
+header .icons i{
+  font-size: 2.5rem;
+  color:#fff;
+  cursor: pointer;
+  margin-right:2rem;
+}
+header .icons i:hover{
+  color:rgb(228, 151, 8);
+}
+header .search-bar-container
+{
+  position:absolute; 
+  top:100%; left:0; right:0;
+  padding:1.5rem 2rem;
+  background: #333;
+  border-top: .1rem solid rgba(255,255,225,.2);
+  display:flex;
+  align-items:center;
+  z-index:1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  
+ 
+} 
+header .search-bar-container.active
+{
+  clip-path: polygon(0 0, 100% 0,100% 100%,0 100%);}
+
+
+header .search-bar-container #search-bar
+{
+  
+  width:100%;
+  padding:1rem;
+  text-transform:none;
+  color:#333;
+  font-size:1.7rem;
+  border-radius: 3rem;
+}
+
+
+header .search-bar-container label
+{
+  color:#fff;
+  cursor:pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+header .search-bar-container label:hover{
+  color:rgb(228, 151, 8);
+}
+
+.login-form-container
+{
+  position:relative;
+  top:0; left:0;
+  min-height: 100vh;
+  width:100%;
+  z-index: 10000;
+ 
+  background:rgba(0,0,0,.7);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container form{
+  margin:2rem;
+  padding:1.5rem 2rem;
+  border-radius:  .5rem;
+  background: #fff;
+  width:50rem;
+}
+.login-form-container i{
+  color:#fff;
+}
+
+.login-form-container form h3{
+  font-size: 3rem;
+  color:#444;
+  text-align:center;
+  text-transform: uppercase;
+  padding: 1rem 0;;
+
+}
+.login-form-container form .box{
+  width:100%;
+  padding:1rem;
+  font-size: 1.7rem;
+  color:#333;
+  margin: .6rem 0;
+  border:.1rem solid rgba(0,0,0,.2);
+  text-transform: none;
+}
+.login-form-container form .box:focus{
+  border-color:rgb(228, 151, 8);
+}
+.login-form-container form #remember
+{
+  margin:2rem 0;
+}
+
+.login-form-container form label
+{
+  font-size: 1.5rem;;
+}
+
+.login-form-container form .btn{
+  display: block;
+  width:100%;
+}
+.login-form-container form p{
+  padding:.5rem 0;
+  font-size: 1.5rem;
+  color:#666;
+}
+.login-form-container form p a{
+  color:rgb(228, 151, 8);
+}
+.login-form-container form p a:hover{
+  color:#333;
+  text-decoration: underline;
+}
+
+.login-form-container #form-close
+{
+  position: absolute;
+  top:2rem; right:3rem;
+  font-size: 5rem;
+  color:#fff;
+ cursor: pointer;
+}
+
+
+/* Home section style */
+.home_section{
+  background-image: url(t5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90%;
+}
+.overlay{
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.home{
+  
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.home h1{
+  font-size: 4rem;
+  color: #fff;
+ 
+}
+.home span{
+  color: rgb(228, 151, 8);
+}
+.home_buttons{
+  margin-top: 2rem;
+}
+.home_buttons button{
+  padding: 10px 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.home_buttons button i{
+  margin-right: 10px;
+}
+.home_buttons .btn1{
+  background:  rgb(134, 46, 177);
+  color: #fff;
+}
+
+/* services */
+.services{
+  background: rgb(223, 223, 223);
+  padding: 2rem 1rem;
+}
+.services .title{
+  text-align: center;
+}
+.title h1{
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.title span{
+  color:
+}
+.title .slogan{
+  font-size: 1rem;
+  color: rgb(155, 149, 149);
+}
+.services_boxes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.box{
+  width: 320px;
+  background: #fff;
+  padding: 2rem;
+  color:#fff;
+  margin: 1rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-shadow: 1px 30px 20px rgba(80, 8, 108, 0.1);
+}
+.box img
+{
+  width:200px;
+  height:200px;
+}
+.box i{
+  font-size: 4rem;
+  color: rgb(228, 151, 8);
+  margin-bottom: 2rem;
+}
+.box p{
+  color: gray;
+  margin-top: 10px;
+}
+.box:hover{
+  
+  border: 3px solid  rgb(228, 151, 8);
+  
+}
+
+/* about us */
+.Aboutus{
+  display:flex;
+  background-color:rgb(223, 223, 223);
+  height:500px;
+  width:1500px;
+}
+.Aboutus.aboutimg{
+  padding-top: 50px;;
+  flex:1 1 41rem;
+
+}
+.aboutimg img
+{
+  box-shadow: #fff;
+  margin-left:200px;
+  border-color: #000;
+  height:300px;
+  width:400px;
+  
+}
+.Aboutus .aboutus{
+  flex:1 1 41rem;
+ 
+  width:200px;
+  height:200px;
+  margin-top: 50px;
+  margin-bottom:100px;
+  color:rgb(227, 224, 224);
+  background-color: #858282;
+  font-size:130%;
+  font-size: 110%;
+  
+}
+
+.heading
+{
+  text-align: center;
+  padding:2.5rem 0;
+}
+
+.heading span
+{
+  font-size: 3.5rem;
+  background:rgba(255,165,0,.2);
+  color:rgb(228, 151, 8);
+  
+  border-radius: .5rem;
+  padding: .2rem .1rem;
+
+}
+.heading span .space
+{
+  background:none;
+}
+
+.image img{
+  width:500px;
+  height:500px;
+  position-relative;
+  left:100px;
+}
